@@ -1,3 +1,4 @@
+#Este ejercicio es el mismo que el 11 de las secuenciales
 pal = input('Introduce la palabra a comprobar: ')
 revpal = pal[::-1]
 if pal == revpal:

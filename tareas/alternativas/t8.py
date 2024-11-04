@@ -1,4 +1,4 @@
-tipo = input('Introduce qué tipo de cliente eres (Regular, Oro, Platino): ').lower()
+tipo = input('Introduce qué tipo de cliente eres (Regular, Oro, Platino): ').lower() #A prueba de tontos
 importe = float(input('Introduce el importe de tu compra en €: '))
 match tipo:
     case 'regular':
