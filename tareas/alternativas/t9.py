@@ -10,16 +10,16 @@ for i in notastr:
         notas.append(int(i))
 
 for j in range(len(notas)):
-    if j == len(notas):
-        media += (0.4*j)
+    if j == (len(notas)-1):
+        media += (0.4*notas[j])
     else:
-        media += (0.2*j)
+        media += (0.2*notas[j])
 msg = 'Tu nota está clasificada como '
 media = round(media)
 match media:
     case media if media >= 9:
         print(msg + 'Sobresaliente')
-    case media if (media == 7) or (media == 8):
+    case media if media in [7, 8]:
         print(msg + 'Notable')
     case media if media == 6:
         print(msg + 'Bien')
