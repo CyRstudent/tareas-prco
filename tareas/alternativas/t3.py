@@ -1,6 +1,7 @@
 base = float(input('Introduce una base: '))
-exponente = abs(float(input('Introduce un exponente: ')))
-res = base**exponente
+exponente = float(input('Introduce un exponente: '))
+absexp = abs(exponente)
+res = base**absexp
 if exponente > 0:
     print(res)
 elif exponente < 0:
