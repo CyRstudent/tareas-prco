@@ -34,7 +34,7 @@ while True:
             opt = listopt('Si necesitas más información, usa el comando \'ayuda\'\nIntroduce una opción de nuevo: ')
             pass
         case 'ayuda':
-            webbrowser.open('https://github.com/CyRstudent/tareas-prco')
+            webbrowser.open('https://github.com/CyRstudent/tareas-prco?tab=readme-ov-file#check_tareaspy')
             pass
         case 'run':
             listdir = [] #La lista de carpetas que va introduciendo
