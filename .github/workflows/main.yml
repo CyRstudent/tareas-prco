@@ -1,18 +1,28 @@
-name: Ejecutar check_tareas.py al hacer push
+# Archivo: .github/workflows/check_errors.yml
+name: Verificar errores en el código
+
 on: 
   push: 
     branches: 
-      - "master"
+      - "*"  # Se ejecutará en todos los branches, puedes especificar branches específicos
 
 jobs:
-  run-check-tareas:
+  lint-and-test:
     runs-on: ubuntu-latest
+
     steps:
+      # Primer paso: check-out del repositorio para acceder al código
       - name: Check out repository
         uses: actions/checkout@v2
+
+      # Segundo paso: configurar Python
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.12'  # Cambia la versión según sea necesario
-      - name: Run check_tareas.py
-        run: python check_tareas.py
+
+      # Cuarto paso: analizar errores de estilo y sintaxis con flake8
+      - name: Run flake8 for linting
+        run: |
+          pip install flake8
+          flake8 .  # Analiza todo el proyecto, puedes cambiar el directorio o agregar opciones
