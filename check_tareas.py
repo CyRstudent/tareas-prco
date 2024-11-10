@@ -16,7 +16,7 @@ opt_text = '''Estas son las opciones que tienes:
     • 'opciones': Muestra este mismo texto
     • 'ayuda': Muestra como usar el programa
     • 'run': Ejecuta el programa
-    • 'salir': Sal del programa 
+    • 'salir': Sal del programa
 '''
 
 def listopt(lmes: str ): #lmes: Last message - El mensaje que se pone abajo del todo
