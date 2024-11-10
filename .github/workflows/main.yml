@@ -1,0 +1,18 @@
+name: Ejecutar check_tareas.py al hacer push
+on: 
+  push: 
+    branches: 
+      - "master"
+
+jobs:
+  run-check-tareas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'  # Cambia la versión según sea necesario
+      - name: Run check_tareas.py
+        run: python check_tareas.py
