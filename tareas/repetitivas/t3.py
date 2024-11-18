@@ -2,7 +2,7 @@ n = int(input('Introduce un número: '))
 arr = []
 while n != 0:
     arr.append(n)
-    n = input('Introduce otro número: ')
+    n = int(input('Introduce otro número: '))
 
 sum = 0
 
