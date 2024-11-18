@@ -1,4 +1,4 @@
-char = input('Introduce un caracter').lower()
+char = input('Introduce un caracter: ').lower()
 vocales = ['a', 'e', 'i', 'o', 'u']
 while True:
     if char == '':
@@ -7,3 +7,4 @@ while True:
         print('VOCAL')
     else:
         print('NO VOCAL')
+    char = input('Introduce otro caracter: ').lower()
