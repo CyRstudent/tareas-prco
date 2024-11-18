@@ -4,7 +4,7 @@
 def check_primo(n: int):
     test = 0
     for j in range(n):
-        if ((j+1) % n) == 0:
+        if (n%(j+1)) == 0:
             test += 1
     return (test==2)
 
