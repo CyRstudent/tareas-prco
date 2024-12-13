@@ -7,4 +7,4 @@ while True: #Por siempre...
         print('VOCAL') #Vocal
     else: #Y ya si no cumple ninguna de estas condiciones, por defecto, es una consonante
         print('NO VOCAL')
-    char = input('Introduce otro caracter: ').lower() #Finalment, pedimos que introduzca otro caracter, dandole sentido al loop
+    char = input('Introduce otro caracter: ').lower() #Finalmente, pedimos que introduzca otro caracter, dandole sentido al loop
