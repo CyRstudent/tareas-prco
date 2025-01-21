@@ -15,4 +15,4 @@ while intentos < 3:
 if intentos == 3:
     print('Has gastado 3 intentos. No has conseeguido entrar')
 else:
-    print(f'¡Has conseguido entrar!')
+    print('¡Has conseguido entrar!')
