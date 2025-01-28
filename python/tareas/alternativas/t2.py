@@ -1,0 +1,13 @@
+#El usuario introduce las longitudes, y las convertimos a números decimales
+a = float(input('Introduce la longitud del primer cateto: '))
+b = float(input('Introduce la longitud del segundo cateto: '))
+c = float(input('Introduce la longitud de la hipotenusa: '))
+if ((a**2)+(b**2))==(c**2): #Si se cumple el teorema de pitágoras...
+    print('El triangulo es rectángulo, ya que cumple el teorema de pitagoras')
+if a==b or b==c or a==c: #Si alguno de sus 2 lados son iguales...
+    if a==b==c: #Y encima de todo, son los 3 iguales...
+        print('El triangulo es equilátero')
+    else:
+        print('El triangulo es isósceles')
+else: #Y si no tiene ningún lado igual...
+    print('El triangulo es escaleno')
