@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Tarea 1</title>
+        <link rel="stylesheet" href="./t1.css">
+    </head>
+    <body>
+        <form action="control_form.php" method="GET">
+            <fieldset>
+                <legend><b>Datos personales</b></legend>
+                <table>
+                    <tr>
+                        <td class="etiqueta">Nombre: </td>
+                        <td align="left"><input type="text" name="nombre" maxlength="50" size="25"/></td>
+                    </tr>
+                    <tr>
+                        <td class="etiqueta">Apellidos: </td>
+                        <td align="left"><input type="text" name="apellidos" maxlength="100" size="35"/></td>
+                    </tr>
+                    <tr>
+                        <td class="etiqueta">Correo electrónico: </td>
+                        <td align="left"><input type="email" name="correo" size="40"/></td>
+                    </tr>
+                    <tr>
+                        <td class="etiqueta">Población: </td>
+                        <td align="left"><input type="text" name="poblacion" maxlength="50" size="15"/></td>
+                    </tr>
+                    <tr>
+                        <td class="etiqueta">Provincia: </td>
+                        <td align="left"><input type="text" name="provincia" maxlength="50" size="15"/></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend><b>Más datos</b></legend>
+                <table class="v2">
+                    <tr>
+                        <td align="left" style="width: 50%"><b>Edad: </b>
+                            <br><input type="radio" name="edad" value="020"/> 0-20
+                            <br><input type="radio" name="edad" value="2040"/> 20-40
+                            <br><input type="radio" name="edad" value="4060"/> 40-60
+                            <br><input type="radio" name="edad" value="60100"/> 60-100
+                        </td>
+                        <td ><b>¿Cómo nos conociste?</b>
+                            <br><input type="checkbox" name="conocimos" value="amigo"/> A través de un amigo
+                            <br><input type="checkbox" name="conocimos" value="buscador"/> A través de un buscador
+                            <br><input type="checkbox" name="conocimos" value="red"/> Navegando por la red
+                            <br><input type="checkbox" name="conocimos" value="otros"/> Otros
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="width: 50%"><b>Opinión sobre nuestra página web</b>
+                            <br><textarea cols="40" rows="5" name="opinion">Escriba aquí su opinión...</textarea>
+                        </td>
+                        <td><b>¿Tiene alguna sugerencia?</b>
+                            <br><textarea cols="40" rows="5" name="sugerencia">Escriba aquí su(s) sugerencia(s)...</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <b>¿Cuanto navegas por internet?</b> (Señala la opción que más se acerque)
+                            <br><select name="horas">
+                                <option>2 horas al día</option>
+                                <option>4 horas al día</option>
+                                </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset><table class="v3" align="center">
+                <tr>
+                    <td><input type="submit" value="Enviar formulario"/></td>
+                    <td><input type="submit" value="Borrar formulario"/></td>
+                </tr>
+            </table></fieldset>
+        </form>
+    </body>
+</html>

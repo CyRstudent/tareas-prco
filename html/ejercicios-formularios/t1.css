@@ -1,0 +1,23 @@
+legend {
+    color:blue;
+    text-align: center;
+}
+td.etiqueta{
+    background-color: #b0dce4;
+    width: 35%;
+    text-align: right;
+    color:black;
+}
+table.v2{
+    width:100%;
+    border-spacing: 0;
+    padding: 10;
+}
+
+fieldset {
+    border-width: 5px;
+}
+table.v3 {
+    width:50%;
+    padding: 10;
+}
