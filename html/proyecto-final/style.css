@@ -1,9 +1,12 @@
 @font-face {
-    font-family: comicsans;
-    src: url('./comicfont.ttf');
+    font-family: 'comic-sans';
+    src: url('comicfont.ttf') format('truetype');
+}
+button {
+    font-family: 'comic-sans', sans-serif;
 }
 body {
-    font-family: comicsans;
+    font-family: 'comic-sans';
     margin: 0;
     padding: 0;
     background-color: #0D1117;
