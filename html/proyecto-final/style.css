@@ -1,7 +1,13 @@
+@font-face {
+    font-family: comicsans;
+    src: url('./comicfont.ttf');
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: comicsans;
     margin: 0;
     padding: 0;
+    background-color: #0D1117;
+    color: #C9D1D9
 }
 header {
     background-color: #4caf50;
@@ -14,9 +20,19 @@ nav {
 }
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 nav ul li {
     float: left;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
 }
 nav ul li a:hover {
     background-color: #575757
@@ -32,4 +48,24 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+div.headerbotones {
+    background-color:#161B22;
+    float: left;
+    width: 100%;
+}
+div.botoncabeceradiv {
+    float: left;
+    width: 25%
+}
+button.botoncabecera {
+    border-radius: 8px;
+    border: 10px;
+    color: #D4AF37;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #303843;
 }
