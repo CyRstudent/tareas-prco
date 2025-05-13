@@ -16,45 +16,8 @@ body {
     color: #C9D1D9;
     width: 100%;
 }
-header {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-nav {
-    background-color: #333
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav ul li {
-    float: left;
-}
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-nav ul li a:hover {
-    background-color: #575757
-}
 .contenido {
     padding: 20px;
-}
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 div.headerbotones {
     background-color:#161B22;
@@ -106,4 +69,16 @@ div.contenedorintro {
 div.fotointro {
     float: left;
     width: 50%;
+}
+div.divfooter {
+    width: 100%;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
