@@ -5,12 +5,16 @@
 button {
     font-family: 'comic-sans', sans-serif;
 }
+h1 {
+    font-size: 70px;
+}
 body {
     font-family: 'comic-sans';
     margin: 0;
     padding: 0;
     background-color: #0D1117;
-    color: #C9D1D9
+    color: #C9D1D9;
+    width: 100%;
 }
 header {
     background-color: #4caf50;
@@ -71,4 +75,35 @@ button.botoncabecera {
     font-size: 20px;
     cursor: pointer;
     background-color: #303843;
+    transition: all 0.5s;
+}
+button.botoncabecera span{
+    cursor: pointer;
+    display: inline-block;
+    position:relative;
+    transition: 0.5s;
+}
+button.botoncabecera span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+button.botoncabecera:hover span {
+    padding-right: 25px;
+}
+button.botoncabecera:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+div.contenedorintro {
+    width: 100%;
+    float: left;
+    padding: 10px 50px;
+}
+div.fotointro {
+    float: left;
+    width: 50%;
 }
