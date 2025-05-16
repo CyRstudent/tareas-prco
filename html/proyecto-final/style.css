@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 @font-face {
     font-family: 'comic-sans';
     src: url('comicfont.ttf') format('truetype');
@@ -64,11 +67,11 @@ button.botoncabecera:hover span:after {
 div.contenedorintro {
     width: 100%;
     float: left;
-    padding: 10px 50px;
 }
 div.fotointro {
     float: left;
     width: 50%;
+    padding-left: 50px;
 }
 div.divfooter {
     width: 100%;
